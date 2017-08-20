@@ -1,0 +1,74 @@
+___The following data can be used to replicate the app on any other platform___
+
+Inputs
+
+A3 Attendance till 
+attendance_till
+
+B3 Attended
+attended
+
+C3 Lecture Count
+lecture_count
+
+A6 New Cycle Bunks
+new_cycle_bunks
+
+A8 Future Estimate
+future_estimate
+
+
+D3 Today's Date
+todays_date
+
+E3 Desired Percentage
+desired_percentage
+
+Outputs
+__________________________________________________
+F6 Past Lecture Bunks
+f6 = c3 - b3
+past_lecture_bunks = lecture_count -  attended;
+__________________________________________________
+D8 Past total days
+ D8 = c3/5
+past_total_days = lecture_count/5;
+__________________________________________________
+C8 Past Percentage
+ c8 = (b3/c3)*100
+past_percentage = (attended / lecture_count)*100;
+__________________________________________________
+B8 New Working days
+ b8 = D3 - A3 + A8
+new_working_days = todays_date - attendance_till + future_estimate;
+__________________________________________________________________
+B5 Total Lectures Till Yet
+b5 = (b8 + d8)*5
+total_lectures_till_yet = (new_working_days + past_total_days)*5;
+__________________________________________________________________
+C5 Lectures Bunked Till Yet
+c5 = A6 + F6
+lectures_bunked_till_yet = new_cycle_bunks + past_lecture_bunks;
+__________________________________________________________________
+D5 Lectures Attended till yet
+d5  = b5 - c5
+lectures_attended_till_yet = total_lectures_till_yet - lectures_bunked_till_yet;
+__________________________________________________________________
+E5 Calculated Today's attendance
+E5 = (D5/B5)*100
+todays_attendance = (lectures_attended_till_yet/total_lectures_till_yet)*100;
+____________________________________________________________________
+A10 Safe lecture Bunks
+
+B10 Safe Day Bunks
+
+C10 Recovery Days
+
+D10 Recovery lectures
+
+
+
+
+
+
+

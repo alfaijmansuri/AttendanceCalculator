@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Attendance Calculator</title>
+</head>
+
+<link type="text/css" href="StyleSheet.css" rel="stylesheet">
+	<script type="text/javascript" src="calculate.js"></script>
+
+<body>
+    <div class="form" >
+        <h1>Attendance Calculator (BETA)</h1>
+        <form>
+            
+            Select date upto which you have attendance data
+            <input type="date"  placeholder="Attendance Till Date" id="attendance_till" required/>
+            
+            <input type="number"  placeholder="Attended Lectures" id="attended" required/>
+            
+            <input type="number"  placeholder="Total Lectures" id="lecture_count" required/>
+            
+			Number of bunks after last attendance
+            <input type="number"  placeholder="Number of Bunks" id="new_cycle_bunks" value="0" required/>
+            
+            <input type="number"  placeholder="Desired Percentage of Attendance" id="desired_percentage" required/>
+            
+			Future Estimate (Optional)
+            <input type="number"  placeholder="Future Estimate (Optional)" id="future_estimate" value="0" />
+			
+			<input type="submit" value ="Calculate" onclick="calculateAttendance()">
+			
+									
+        </form>
+    </div>
+	<footer>
+	  <p>Developed by: Yash Bhutoria</p>
+	  <p>Contact information: <a href="mailto:2015pcecsyash@poornima.org">
+	  2015pcecsyash@poornima.org</a>.</p>
+	</footer> 
+</body>
+
+</html>
