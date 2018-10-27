@@ -19,7 +19,7 @@ function calculateAttendance() {
 	var todays_attendance = (lectures_attended_till_yet/total_lectures_till_yet)*100;
 	
 	
-	var sentence = "Your Present Attendance is Calculated to be " + todays_attendance + " \n Do you want to know how much lectures you can bunk and still maintain your desired attendance ?"
+	var sentence = "Your Present Attendance is Calculated to be " + todays_attendance + " \n Do you want to know how much lectures you can bunk and still maintain your desired attendance  ?"
 	
 	var ad = confirm(sentence);
 	
